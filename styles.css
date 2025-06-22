@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: rgb(194, 191, 191);
+    background-position: center center;
+    background-size: cover;
+}
+
+.chatbox{
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow:hidden;
+    max-height: calc(100vh - 250px);
+    height: calc(100vh - 250px);
+}
+
+.chatbox-header{
+    background-color: #0084ff;
+    color:#ffffff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.chatbox-body{
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(100% - 200px);
+
+}
+
+.chatbox-body .message,
+.chatbox-body .response{
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+}
+
+.chatbox-body .message{
+    background-color: #fff;
+    color: #ffffff;
+    text-align: right;
+
+}
+
+
+.chatbox-body .response{
+    background-color: #0084ff;
+    color: #ffff;
+    text-align: right;
+}
+
+.chatbox-footer{
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+    padding: 8px 16px;
+}
+
+.chatbox-footer button{
+    margin: 8px;
+    padding: 8px 16px;
+    background-color: #0084ff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.chatbox-footer button:hover{
+    background-color: #0073e6;
+}
+
+.chatbox-footer button:active{
+    background-color: #005bbf;
+}
